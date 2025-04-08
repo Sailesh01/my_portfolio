@@ -244,6 +244,12 @@ article.active {
   padding-bottom: 7px;
 }
 
+.clients-item img {
+  height: 40px;
+  object-fit: contain;
+}
+
+
 .article-title::after {
   content: "";
   position: absolute;
@@ -1451,6 +1457,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
     border-radius: 20px;
   }
+
+  .avatar-box img {
+    border-radius: 15px; /* Adjust the value for more or less rounded corners */
+  }
+  
 
   .modal-img-wrapper {
     display: flex;
