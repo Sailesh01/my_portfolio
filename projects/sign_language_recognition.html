@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Sailesh Rana</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/data_icon.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/profile.jpg" alt="Sailesh Rana" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sailesh Rana">Sailesh Rana</h1>
+
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sailesh.rana@outlook.com" class="contact-link">sailesh.rana@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="http://www.linkedin.com/in/sailesh-rana" class="contact-link">http://www.linkedin.com/in/sailesh-rana</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/Sailesh01" class="contact-link">https://github.com/Sailesh01</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sydney, Australia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+
+      <article class="about active" data-page="about" class="service-item-text">
+        <a href="../index.html#portfolio" class="close-btn" title="Back to Projects"
+        style="position: absolute; top: 20px; left: 830px; font-size: 1.5rem; text-decoration: none; color: #333; background: var(--light-gray); padding: 5px 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+        ×
+      </a>
+
+      <header>
+        <h1>Dynamic Nepali Sign Language Recognition</h1>
+        <p>CNN + LSTM Model for Gesture-Based Communication</p>
+      </header>
+    
+      <div class="carousel-container" style="max-width: 700px; margin: 2rem auto; position: relative;">
+        <img class="carousel-image" src="../assets/images/splash_screen.jpg"
+        style="max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;"
+        />
+        <p class="carousel-caption" style="text-align: center; margin-top: 10px;">Splash Screen</p>
+    
+        <button class="carousel-btn left" onclick="changeSlide(-1)"
+          style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❮</button>
+        <button class="carousel-btn right" onclick="changeSlide(1)"
+          style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❯</button>
+      </div>
+    
+      <section class="project-detail" style="padding: 2rem;">
+        <h2>Project Overview</h2>
+        <ul style="list-style-type: disc; padding-left: 40px;">
+          <li><strong>Objective:</strong> Build an AI system to dynamically recognize Nepali Sign Language (NSL) gestures and bridge the communication gap between deaf-mute and hearing-speaking individuals.</li>
+          <li><strong>Tools & Technologies:</strong> Python, TensorFlow, InceptionV3, LSTM, FFmpeg, NumPy, Google Colab</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Problem Statement</h2>
+        <p style="padding-left: 40px;">
+          Many deaf-mute individuals in Nepal lack early exposure to Nepali Sign Language (NSL), making communication with the general public challenging. There is a shortage of interpreters, and most families lack NSL proficiency. This project aims to create a system that can dynamically translate NSL gestures into text/voice and vice versa to bridge this communication gap.
+        </p>
+    
+        <br><br>
+    
+        <h2>Dataset</h2>
+        <p style="padding-left: 40px;">
+          Due to the lack of publicly available NSL datasets, a custom dataset was generated with five NSL signs: <em>father, food, promise, tea, wife</em>. Each sign was performed 20 times under different lighting and background conditions, leading to 80 videos per class (66 for training, 14 for testing). Data augmentation expanded the dataset to 1650 total videos.
+        </p>
+    
+        <br><br>
+    
+        <h2>Preprocessing</h2>
+        <ul style="padding-left: 40px;">
+          <li>Augmented videos using flipping, rotation, contrast manipulation.</li>
+          <li>Extracted frames using FFmpeg and generated metadata CSV.</li>
+          <li>Downsampled to 40 frames per video to reduce overfitting.</li>
+          <li>Extracted features using InceptionV3 (output: 40x2048 feature vectors).</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Methodology</h2>
+        <ul style="padding-left: 40px;">
+          <li><strong>Feature Extraction:</strong> Used InceptionV3 (pretrained on ImageNet) to extract spatial features from video frames.</li>
+          <li><strong>Temporal Modeling:</strong> Passed features to LSTM layers to model sequential dependencies.</li>
+          <li><strong>Model Architecture:</strong>
+            <ul>
+              <li>2 LSTM layers (256 and 128 units)</li>
+              <li>Dense + ReLU + Dropout layers</li>
+              <li>Final Dense layer with Softmax for classification</li>
+            </ul>
+          </li>
+          <li><strong>Training Configuration:</strong>
+            <ul>
+              <li>Loss Function: Categorical Crossentropy</li>
+              <li>Optimizer: Adam (lr=1e-5, decay=1e-5)</li>
+              <li>Metrics: Accuracy, Top-k Accuracy</li>
+            </ul>
+          </li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Experimental Results</h2>
+        <ul style="padding-left: 40px;">
+          <li>Trained for 100 epochs on Google Colab (with GPU support)</li>
+          <li>Initial model with 66 videos/class → 98% training accuracy, 20% validation accuracy (overfitting)</li>
+          <li>Augmented dataset to 330 videos/class → 89% training accuracy, 59% validation accuracy</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Conclusion</h2>
+        <p style="padding-left: 40px;">
+          The system effectively classifies dynamic Nepali Sign Language gestures using a CNN-LSTM architecture. Despite limitations like small dataset size and limited hardware resources, the model showed promising results. This work demonstrates the potential of deep learning in sign language recognition and can be expanded to more gestures in the future.
+        </p>
+    
+        <br><br>
+    
+        <h2>Key Features</h2>
+        <ul style="padding-left: 40px;">
+          <li>Real-time sign recognition using video sequences</li>
+          <li>Dynamic sentence generation from detected gestures</li>
+          <li>Bi-directional conversion: Text/Voice to NSL and NSL to Text/Voice</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Links</h2>
+        <ul style="padding-left: 40px;">
+          <li><a href="https://github.com/Sailesh01/Nepali-Sign-Language-Recognition" target="_blank">GitHub Repo</a></li>
+        </ul>
+    
+        <br><br>
+    
+        <p><a href="../index.html#portfolio" class="back-btn">Back to Portfolio</a></p>
+      </section>
+    </article>
+      
+
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const images = [
+      "../assets/images/splash_screen.jpg",
+      "../assets/images/system_on_work.jpg",
+      "../assets/images/architecture.jpg",
+      "../assets/images/system_architecture.jpg",
+      "../assets/images/custom_dataset.png",
+      "../assets/images/validation_loss_curve.jpg",
+]
+
+    const captions = [
+  "Splash Screen",
+  "Home Screen",
+  "CNN-LSTM Architecture",
+  "System Architecture",
+  "Custom-made Dataset",
+  "Validation Loss Curve"
+];
+    
+  
+    let currentIndex = 0;
+
+function changeSlide(direction) {
+  currentIndex = (currentIndex + direction + images.length) % images.length;
+  document.querySelector(".carousel-image").src = images[currentIndex];
+  document.querySelector(".carousel-caption").textContent = captions[currentIndex];
+}
+
+// Ensure the first image is displayed initially
+document.querySelector(".carousel-image").src = images[currentIndex];
+
+
+</script>
+
+</body>
+
+</html>

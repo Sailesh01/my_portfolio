@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Sailesh Rana</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/data_icon.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/profile.jpg" alt="Sailesh Rana" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sailesh Rana">Sailesh Rana</h1>
+
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sailesh.rana@outlook.com" class="contact-link">sailesh.rana@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="http://www.linkedin.com/in/sailesh-rana" class="contact-link">http://www.linkedin.com/in/sailesh-rana</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/Sailesh01" class="contact-link">https://github.com/Sailesh01</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sydney, Australia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+
+      <article class="about active" data-page="about" class="service-item-text">
+        <a href="../index.html#portfolio" class="close-btn" title="Back to Projects"
+        style="position: absolute; top: 20px; left: 830px; font-size: 1.5rem; text-decoration: none; color: #333; background: var(--light-gray); padding: 5px 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+        ×
+      </a>
+
+      <header>
+        <h1>Rainfall Prediction Using Machine Learning</h1>
+        <p>Predicting Rain with Decision Tree, Random Forest, Naive Bayes & ANN</p>
+      </header>
+    
+      <div class="carousel-container" style="max-width: 700px; margin: 2rem auto; position: relative;">
+        <img class="carousel-image" src="../assets/images/missing_values_heatmap.jpg"
+        style="max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;"
+        />
+        <p class="carousel-caption" style="text-align: center; margin-top: 10px;">Missing Values Heatmap</p>
+    
+        <button class="carousel-btn left" onclick="changeSlide(-1)"
+          style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❮</button>
+        <button class="carousel-btn right" onclick="changeSlide(1)"
+          style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❯</button>
+      </div>
+    
+      <section class="project-detail" style="padding: 2rem;">
+        <h2>Project Overview</h2>
+        <ul style="list-style-type: disc; padding-left: 40px;">
+          <li><strong>Objective:</strong> Predict whether it will rain tomorrow in Australia using 10 years of historical weather data.</li>
+          <li><strong>Tools Used:</strong> Python (scikit-learn, pandas, matplotlib), Jupyter Notebook</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Problem Statement</h2>
+        <p style="padding-left: 40px;">
+          Traditional weather forecasting struggles with high-dimensional data. This project uses machine learning models to predict rainfall based on historical weather data collected across Australia, enabling more accurate and timely weather forecasting.
+        </p>
+    
+        <br><br>
+    
+        <h2>Models Used</h2>
+        <ul style="padding-left: 40px;">
+          <li>Decision Tree Classifier</li>
+          <li>Random Forest Classifier</li>
+          <li>Gaussian Naive Bayes</li>
+          <li>Artificial Neural Network (ANN)</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Data Processing</h2>
+        <ul style="padding-left: 40px;">
+          <li>Missing value handling using mean/mode imputation</li>
+          <li>Label encoding of categorical features</li>
+          <li>Train-test split with class balancing</li>
+          <li>Performance evaluation using accuracy, precision, recall, and F1-score</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Results</h2>
+        <ul style="padding-left: 40px;">
+          <li><strong>Random Forest:</strong> Achieved 85% accuracy with balanced precision and recall</li>
+          <li><strong>Naive Bayes:</strong> High recall for rain detection, useful for safety-critical use cases</li>
+          <li><strong>ANN:</strong> Faced challenges due to class imbalance, requiring further tuning</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Key Insights</h2>
+        <ul style="padding-left: 40px;">
+          <li>Strong class imbalance impacted model performance; oversampling techniques recommended</li>
+          <li>Random Forest emerged as the most robust model with generalizable results</li>
+          <li>Feature selection revealed "Humidity at 3pm" and "Rain Today" as strong predictors</li>
+        </ul>
+    
+        <br><br>
+    
+        <h2>Links</h2>
+        <ul style="padding-left: 40px;">
+          <li><a href="https://github.com/Sailesh01" target="_blank">GitHub Repo</a></li>
+        </ul>
+    
+        <br><br>
+    
+        <p><a href="../index.html#portfolio" class="back-btn">← Back to Projects</a></p>
+      </section>
+    </article>
+      
+
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const images = [
+      "../assets/images/missing_values_heatmap.jpg",
+      "../assets/images/handling_missing_values.jpg",
+      "../assets/images/distribution_of_rain_today_tmr.jpg",
+      "../assets/images/box_plot_humidity.jpg",
+      "../assets/images/violin_plot_min_tempr.jpg",
+      "../assets/images/correlation_matrix.jpg",
+      "../assets/images/accuracy_comparison.jpg"]
+
+    const captions = [
+  "Missing Values Using Heatmap",
+  "Handling Missing Values",
+  "Distribution of Rain Today and Rain Tomorrow",
+  "Box Plot for Humidity",
+  "Violin Plot for Minimum Temperature",
+  "Correlation Matrix",
+  "Accuracy Comparision"
+];
+    
+  
+    let currentIndex = 0;
+
+function changeSlide(direction) {
+  currentIndex = (currentIndex + direction + images.length) % images.length;
+  document.querySelector(".carousel-image").src = images[currentIndex];
+  document.querySelector(".carousel-caption").textContent = captions[currentIndex];
+}
+
+// Ensure the first image is displayed initially
+document.querySelector(".carousel-image").src = images[currentIndex];
+
+
+</script>
+
+</body>
+
+</html>

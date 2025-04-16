@@ -127,7 +127,7 @@
 
 a { text-decoration: none; }
 
-li { list-style: none; }
+/*li { list-style: none; }*/
 
 img, ion-icon, a, button, time, span { display: block; }
 
@@ -442,6 +442,7 @@ main {
   gap: 15px;
   padding-bottom: 4px;
   padding-left: 7px;
+  list-style: none;
 }
 
 .social-item .social-link {
@@ -479,6 +480,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  list-style: none;
 }
 
 .navbar-link {
@@ -526,6 +528,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  list-style: none;
 }
 
 .service-item {
@@ -582,6 +585,7 @@ main {
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
+  list-style: none;
 }
 
 .testimonials-item {
@@ -747,6 +751,7 @@ main {
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 25px;
+  list-style: none;
 }
 
 .clients-item {
@@ -789,6 +794,7 @@ main {
 .timeline-list {
   font-size: var(--fs-6);
   margin-left: 45px;
+  list-style: none;
 }
 
 .timeline-item { position: relative; }
@@ -805,6 +811,7 @@ main {
   color: var(--vegas-gold);
   font-weight: var(--fw-400);
   line-height: 1.6;
+  list-style: none;
 }
 
 .timeline-item:not(:last-child)::before {
@@ -842,7 +849,8 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+.skills-list { padding: 20px; 
+  list-style: none;}
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
@@ -881,7 +889,8 @@ main {
   #PORTFOLIO
 \*-----------------------------------*/
 
-.filter-list { display: none; }
+.filter-list { display: none; 
+  list-style: none;}
 
 .filter-select-box {
   position: relative;
@@ -917,12 +926,14 @@ main {
   visibility: hidden;
   pointer-events: none;
   transition: 0.15s ease-in-out;
+  list-style: none;
 }
 
 .filter-select.active + .select-list {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  list-style: none;
 }
 
 .select-item button {
@@ -943,6 +954,7 @@ main {
   grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 10px;
+  list-style: none;
 }
 
 .project-item { display: none; }
@@ -1046,6 +1058,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  list-style: none;
 }
 
 .blog-post-item > a {
@@ -1366,7 +1379,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .separator { margin: 32px 0; }
 
-  .contacts-list { gap: 20px; }
+  .contacts-list { gap: 20px; 
+    list-style: none;}
 
   .contact-info {
     max-width: calc(100% - 64px);
@@ -1381,7 +1395,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar { border-radius: 20px 20px 0 0; }
 
-  .navbar-list { gap: 20px; }
+  .navbar-list { gap: 20px; 
+    list-style: none;}
 
   .navbar-link { --fs-8: 14px; }
 
@@ -1891,6 +1906,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+article.about {
+  color: var(--light-gray);
+}
 
 .custom-bullets li {
   position: relative;
@@ -1905,35 +1923,37 @@ textarea.form-input::-webkit-resizer { display: none; }
   left: 0;
   color: rgb(254, 196, 98);
 }
-
-/* Project Details Page Styles */
-.project-details {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.project-details img {
-  width: 100%;
-  border-radius: 8px;
-  margin: 1rem 0;
-}
-
-.demo-btn, .code-btn {
+.back-btn {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
-  margin: 1rem 1rem 1rem 0;
-  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #313234;
+  color: white;
   text-decoration: none;
+  border-radius: 25px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.demo-btn {
-  background-color: #4CAF50;
-  color: white;
+.back-btn:hover {
+  background-color: #313335;
+}
+/* ...............................................*/
+
+.project-img img {
+  width: 100%;
+  height: 200px; /* or any size you prefer */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px; /* optional, for rounded edges */
 }
 
-.code-btn {
-  background-color: #333;
-  color: white;
-}
+
+  .carousel-caption {
+    font-family: 'Arial'; /* Change font family */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    font-style: italic; /* Make the text italic */
+    color: var(--light-gray); /* Change text color */
+    text-align: center; /* Center align the text */
+  }
+

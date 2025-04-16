@@ -155,3 +155,42 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+window.addEventListener('load', () => {
+  const hash = window.location.hash;
+  if (hash === '#portfolio') {
+    document.querySelectorAll('[data-nav-link]').forEach(btn => {
+      if (btn.textContent.trim().toLowerCase() === 'portfolio') {
+        btn.click(); // Triggers the same effect as clicking "Portfolio"
+      }
+    });
+  }
+});
+
+// Select all filter buttons
+const filterButtons = document.querySelectorAll("[data-filter-btn]");
+const projects = document.querySelectorAll("[data-filter-item]");
+
+// Loop through each filter button
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    // Remove 'active' class from all buttons, add to clicked one
+    filterButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const filterValue = btn.getAttribute("data-filter");
+
+    projects.forEach(project => {
+      const category = project.getAttribute("data-category");
+
+      // Show all if 'all' is selected
+      if (filterValue === "all" || category === filterValue) {
+        project.classList.add("active");
+        project.style.display = "block";
+      } else {
+        project.classList.remove("active");
+        project.style.display = "none";
+      }
+    });
+  });
+});
