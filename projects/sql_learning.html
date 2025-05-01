@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Sailesh Rana</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/data_icon.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/profile.jpg" alt="Sailesh Rana" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sailesh Rana">Sailesh Rana</h1>
+
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sailesh.rana@outlook.com" class="contact-link">sailesh.rana@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="http://www.linkedin.com/in/sailesh-rana" class="contact-link">http://www.linkedin.com/in/sailesh-rana</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/Sailesh01" class="contact-link">https://github.com/Sailesh01</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sydney, Australia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <article class="about active" data-page="about" class="service-item-text">
+        <a href="../index.html#portfolio" class="close-btn" title="Back to Projects"
+          style="position: absolute; top: 20px; left: 830px; font-size: 1.5rem; text-decoration: none; color: #333; background: var(--light-gray); padding: 5px 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+          ×
+        </a>
+      
+        <header>
+          <h1>SQL Practice with LeetCode</h1>
+          <p>Documenting my daily SQL problem-solving journey</p>
+        </header>
+      
+        <section class="project-detail" style="padding: 2rem;">
+          <h2>Project Overview</h2>
+          <ul style="list-style-type: disc; padding-left: 40px;">
+            <li><strong>Objective:</strong> Strengthen SQL querying skills by solving real-world problems on LeetCode and documenting the process.</li>
+            <li><strong>Tools Used:</strong> LeetCode SQL playground, GitHub, Markdown</li>
+          </ul>
+      
+          <br><br>
+      
+          <h2>Details</h2>
+          <p style="padding-left: 40px;">
+            I've been consistently working through SQL problems on LeetCode to sharpen my skills in areas like filtering, grouping, joins, subqueries, and window functions. Along the way, I’ve been keeping a GitHub repo where I share my solutions with occasional notes on problems I found challenging or concepts that were new to me.
+          </p>
+      
+          <br><br>
+      
+          <h2>Sample Entries</h2>
+          <ul style="padding-left: 40px;">
+            <li><strong>March 2025:</strong> Solved 20 problems. Learned to use <code>RANK()</code> and <code>NTILE()</code> for leaderboard-type queries.</li>
+            <li><strong>February 2025:</strong> Focused on <code>JOIN</code> and <code>GROUP BY</code> scenarios. Got faster at debugging nested subqueries.</li>
+          </ul>
+      
+          <br><br>
+      
+          <h2>Links</h2>
+          <p style="padding-left: 40px;">
+            <a href="https://github.com/Sailesh01/leetcode-sql-solutions" target="_blank" style="text-decoration: none; color: blue;">
+              🔗 View SQL Practice Repo on GitHub
+            </a>
+            <a href="https://github.com/Sailesh01/leetcode-sql-solutions/blob/main/reflection.md" target="_blank" style="text-decoration: none; color: blue;">
+              🔗 Read My Learning Reflections
+            </a>
+          </p>
+      
+      
+          <br><br>
+          <p><a href="../index.html#portfolio" class="back-btn">Back to Portfolio</a></p>
+        </section>
+      </article>
+      
+      
+    </div>
+    
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

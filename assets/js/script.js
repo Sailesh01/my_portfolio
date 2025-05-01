@@ -158,14 +158,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 window.addEventListener('load', () => {
   const hash = window.location.hash;
-  if (hash === '#portfolio') {
+  
+  if (hash) {
+    const pageName = hash.replace('#', '').toLowerCase();
     document.querySelectorAll('[data-nav-link]').forEach(btn => {
-      if (btn.textContent.trim().toLowerCase() === 'portfolio') {
-        btn.click(); // Triggers the same effect as clicking "Portfolio"
+      if (btn.textContent.trim().toLowerCase() === pageName) {
+        btn.click(); // Triggers the click on the correct navigation button
       }
     });
   }
 });
+
 
 // Select all filter buttons
 const filterButtons = document.querySelectorAll("[data-filter-btn]");

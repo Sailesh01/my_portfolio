@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Sailesh Rana</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/data_icon.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/profile.jpg" alt="Sailesh Rana" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sailesh Rana">Sailesh Rana</h1>
+
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sailesh.rana@outlook.com" class="contact-link">sailesh.rana@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="http://www.linkedin.com/in/sailesh-rana" class="contact-link">http://www.linkedin.com/in/sailesh-rana</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/Sailesh01" class="contact-link">https://github.com/Sailesh01</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sydney, Australia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <article class="about active" data-page="about" class="blog-post">
+        <a href="../index.html#blog" class="close-btn" title="Back to Projects"
+          style="position: absolute; top: 20px; left: 830px; font-size: 1.5rem; text-decoration: none; color: #333; background: var(--light-gray); padding: 5px 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+          ×
+        </a>
+      
+        <header>
+          <h1>April 2025 SQL Learning Reflection</h1>
+          <p class="post-meta">By Sailesh Rana • April 29, 2025</p>
+        </header>
+      
+        <section class="blog-content">
+          <img src="../assets/images/sql_blog_april1.png" alt="Portfolio Cover Image" style="width: 700px; border-radius: 12px; margin-bottom: 1.5rem;"/>
+      <br><br>
+          <p>Throughout April, I focused on solving medium to hard-level SQL problems on LeetCode. I wanted to sharpen my skills in handling more advanced SQL topics like analytical functions, CTEs, and multi-table joins, moving beyond just basic SELECT queries.
+           <br> <br>I worked on various problems related to business scenarios like transaction summaries, user behavior tracking, project allocations, and customer analytics.
+          </p>
+      
+          <h2>Key Concepts I Focused On</h2>
+          <ul style="padding-left: 40px;">
+            <li>Window Functions: Practiced using LAG(), DENSE_RANK(), and ROW_NUMBER() to solve problems that required comparisons across rows without collapsing data using GROUP BY.</li>
+            <li>Common Table Expressions (CTEs): Used CTEs extensively to break down multi-step queries into manageable chunks. I realized how CTEs make complex queries much more readable.</li>
+            <li>Joins and Self-Joins: Mastered the use of LEFT JOIN, INNER JOIN, and self-joins to combine related information from multiple tables, especially for user-friend relationships and transaction linking problems.</li>
+            <li>Aggregation and Conditional Sums: Got better at writing queries that calculate conditional totals (e.g., approved vs. chargeback transactions) and grouping by months or countries.</li>
+          </ul>
+          <br><br>
+          <img src="../assets/images/sql_blog_april2.png" alt="Portfolio Cover Image" style="width: 500px; border-radius: 12px; margin-bottom: 1.5rem; display: block; margin-left: auto; margin-right: auto;"/>
+      
+          <h2>Challenges I Faced</h2>
+          <ul style="padding-left: 40px;">
+            <li>Realized that COALESCE() and careful join conditions are critical when dealing with incomplete data or missing relationships</li>
+            <li>Building queries with nested CTEs and multiple joins sometimes got confusing. Breaking problems into smaller parts helped me structure the queries more systematically.</li>
+          </ul>
+<br>
+          <h2>My Progress so far</h2>
+          <ul style="padding-left: 40px;">
+            <li>I feel more confident writing complex queries that use both aggregation and window functions.</li>
+            <li>I started writing cleaner queries with meaningful aliases and clear formatting.</li>
+          </ul>
+
+      <br><br>
+      
+          <p><a href="../index.html#blog" class="back-btn">← Back to Blog List</a></p>
+        </section>
+      </article>
+      
+
+      
+      
+    </div>
+    
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

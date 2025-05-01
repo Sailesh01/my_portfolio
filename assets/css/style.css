@@ -741,29 +741,25 @@ main {
 .clients-list {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
-  margin: 0 -15px;
   padding: 25px;
-  padding-bottom: 25px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
   list-style: none;
 }
 
 .clients-item {
-  min-width: 50%;
+  flex: 0 0 auto;
   scroll-snap-align: start;
 }
 
 .clients-item img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
+  width: 80px; /* Adjust as needed */
+  height: auto;
+  object-fit: contain;
 }
+
 
 .clients-item img:hover { filter: grayscale(0); }
 
@@ -1957,3 +1953,33 @@ article.about {
     text-align: center; /* Center align the text */
   }
 
+  .blog-post {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  .blog-post h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-post .post-meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .blog-content a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  

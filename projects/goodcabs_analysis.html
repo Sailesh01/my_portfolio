@@ -160,19 +160,19 @@
 
       <article class="about active" data-page="about" class="service-item-text">
         <a href="../index.html#portfolio" class="close-btn" title="Back to Projects"
-        style="position: absolute; top: 20px; left: 830px; font-size: 1.5rem; text-decoration: none; color: #333; background: var(--light-gray); padding: 5px 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-        ×
-      </a>
-
+          style="position: absolute; top: 20px; left: 830px; font-size: 1.5rem; text-decoration: none; color: #333; background: var(--light-gray); padding: 5px 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+          ×
+        </a>
+      
         <header>
-          <h1>Bank Loan Analysis Dashboard</h1>
-          <p>Multi-platform dashboards to evaluate loan performance & risk metrics</p>
+          <h1>Goodcabs Business Analysis</h1>
+          <p>Power BI dashboards to uncover operational insights and passenger behavior patterns</p>
         </header>
       
         <div class="carousel-container" style="max-width: 700px; margin: 2rem auto; position: relative;">
-          <img class="carousel-image" src="../assets/images/bank_loan_analysis-1.png"
+          <img class="carousel-image" src="../assets/images/goodcabs1.png"
             style="max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto; border-radius: 10px;" />
-          <p class="carousel-caption" style="text-align: center; margin-top: 10px;">Summary Dashboard - KPI Overview</p>
+          <p class="carousel-caption" style="text-align: center; margin-top: 10px;">Overview Dashboard - Key KPIs and Ratings</p>
       
           <button class="carousel-btn left" onclick="changeSlide(-1)"
             style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❮</button>
@@ -183,73 +183,82 @@
         <section class="project-detail" style="padding: 2rem;">
           <h2>Project Overview</h2>
           <ul style="list-style-type: disc; padding-left: 40px;">
-            <li ><strong>Objective:</strong> Analyze bank loan data to track KPIs, identify trends, and assess loan performance.</li>
-            <li><strong>Tools Used:</strong> Excel, Power BI, Tableau, MsSQL</li>
+            <li><strong>Objective:</strong> Deliver actionable insights to the Chief of Operations on trip performance, passenger satisfaction, and repeat behavior.</li>
+            <li><strong>Tools Used:</strong> Power BI, Power Query, DAX</li>
           </ul>
-          
+      
           <br><br>
       
           <h2>Problem Statement</h2>
           <p style="padding-left: 40px;">
-            The goal of this project was to create interactive dashboards that help monitor loan performance and key business metrics. It focused on tracking the total amount funded, repayments received, interest rates, and debt-to-income (DTI) ratios. The dashboards also highlighted trends in loan status and regional performance, with insights presented using month-to-date and month-over-month comparisons.          </p>
+            Goodcabs, a cab service company operating in ten tier-2 Indian cities, aimed to track performance and growth targets for 2024. With the analytics lead unavailable, I was tasked with producing a complete operational report to assist executive-level decision-making through an intuitive dashboard experience.
+          </p>
+      
           <br><br>
+      
           <h2>Dashboards & Visualizations</h2>
           <div style="padding-left: 40px;">
-          <h3>Dashboard 1: Summary Dashboard</h3>
-          <p>High-level KPIs and loan status comparisons</p>
-          <ul>
-            <li>Total Loan Applications (MTD & MoM)</li>
-            <li>Total Funded Amount (MTD & MoM)</li>
-            <li>Total Amount Received (MTD & MoM)</li>
-            <li>Average Interest Rate (MTD & MoM)</li>
-            <li>Average DTI Ratio (MTD & MoM)</li>
-          </ul>
-          <p><strong>Good vs. Bad Loan KPIs:</strong> Application %, Funded Amount, and Received Amount comparisons</p>
-          <p><strong>Loan Status Grid:</strong> Status-wise summary (e.g., Current, Fully Paid, Charged Off)</p>
-          <br>
-          <h3>Dashboard 2: Overview Dashboard</h3>
-          <p>Visual exploration of trends and demographics</p>
-          <ul>
-            <li>Monthly Trends by Issue Date (Line Chart)</li>
-            <li>Regional Lending Activity (Filled Map)</li>
-            <li>Loan Term Distribution (Donut Chart)</li>
-            <li>Employment Length Analysis (Bar Chart)</li>
-            <li>Loan Purpose Breakdown (Bar Chart)</li>
-            <li>Home Ownership Patterns (Tree Map)</li>
-          </ul>
-          <br>
-          <h3>Dashboard 3: Details Dashboard</h3>
-          <p>Granular data exploration with filters and export functionality.</p>
-          <ul>
-            <li>Interactive grid with filters for status, term, and region</li>
-            <li>Search & sort capabilities</li>
-            <li>Export to Excel option</li>
-          </ul>
+            <h3>Dashboard 1: Overview</h3>
+            <p>High-level KPIs and summary insights</p>
+            <ul>
+              <li>Total Trips, Average Driver & Passenger Ratings</li>
+              <li>Repeat Passenger Rate vs. New Passengers</li>
+            </ul>
+      <br>
+            <h3>Dashboard 2: City Insights</h3>
+            <p>Performance breakdown across cities</p>
+            <ul>
+              <li>Top 5 and Bottom 5 Cities by Trip Volume</li>
+              <li>Fare vs Distance Efficiency by City</li>
+              <li>Target Achievement Analysis</li>
+            </ul>
+            <br>
+            <h3>Dashboard 3: Time-Based Trends</h3>
+            <ul>
+              <li>Monthly Trip Volume Trends</li>
+              <li>Weekday vs Weekend Analysis</li>
+              <li>Peak and Low Demand Months per City</li>
+            </ul>
+            <br>
+            <h3>Dashboard 4: Repeat Behavior Analysis</h3>
+            <ul>
+              <li>Repeat Trip Frequency Distribution</li>
+              <li>City-wise Repeat Passenger Count</li>
+              <li>Monthly Repeat Passenger Rate Trend</li>
+            </ul>
           </div>
+      
           <br><br>
-          <h2>Key Learnings & Insights</h2>
+      
+          <h2>Key Insights</h2>
           <ul style="padding-left: 40px;">
-            <li>California, Texas, and New York had the highest number of loan applications, with California showing the most defaults among the three.</li>
-            <li>Borrowers with less than two years of employment history were more likely to default, making job stability a key risk factor.</li>
-            <li>‘Debt Consolidation’ and ‘Small Business’ were the most common reasons for taking out loans. Among them, loans for small businesses had the highest average funding.</li>
-            <li>Loans with 60-month terms were repaid less often than those with 36-month terms, pointing to higher risk with longer durations.</li>
-            <li>People who owned homes tended to repay their loans more reliably than those who rented, as seen in the home ownership breakdown.</li>
-            <li>From one month to the next, loan applications went up by 12%, but the total funded amount dropped by 5%, which may point to stricter approval criteria or reduced funding capacity.</li>
+            <li>Jaipur and Lucknow led in both trip volume and repeat passenger count.</li>
+            <li>Weekend trips consistently outnumber weekday trips — suggesting leisure usage.</li>
+            <li>Kochi maintained a strong fare-to-distance efficiency.</li>
+            <li>Repeat passenger rate showed a steady upward trend over the months — indicating improving loyalty.</li>
           </ul>
-<br><br>
-
-
+      
+          <br><br>
+      
+          <h2>Video Presentation</h2>
+          <div style="text-align: center;">
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/cgcfHf8F2gg" title="Goodcabs Business Analysis Presentation"
+              frameborder="0" allowfullscreen style="border-radius: 10px;"></iframe>
+          </div>
+      
+          <br><br>
+      
           <h2>Links</h2>
-          <p style="display:inline;">
-            <ul style="padding-left: 40px;">
-           <li> <a href="https://github.com/Sailesh01/Bank-Loan-Analysis" target="_blank">GitHub Repo</a></li></ul>
-          </p>
-      <br><br>
+          <ul style="padding-left: 40px;">
+            <li><a href="https://github.com/Sailesh01/Goodcabs-Business-Analysis" target="_blank">GitHub Repo</a></li>
+          </ul>
+      
+          <br><br>
+      
           <p><a href="../index.html#portfolio" class="back-btn">Back to Portfolio</a></p>
         </section>
-      
-
       </article>
+      
       
 
 
@@ -271,24 +280,16 @@
 
   <script>
     const images = [
-      "../assets/images/bank_loan_analysis-1.png",
-      "../assets/images/bank_loan_analysis-11.png",
-      "../assets/images/bank_loan_analysis-111.png",
-      "../assets/images/bank_loan_analysis-2.png",
-      "../assets/images/bank_loan_analysis-22.png",
-      "../assets/images/bank_loan_analysis-3.png",
-      "../assets/images/bank_loan_analysis-33.png",
-      "../assets/images/bank_loan_analysis-333.png"
+      "../assets/images/goodcabs1.png",
+      "../assets/images/goodcabs2.png",
+      "../assets/images/goodcabs3.png",
+      "../assets/images/goodcabs4.png"
     ];
     const captions = [
-  "Power BI Summary Dashboard",
-  "Power BI Overview Dashboard",
-  "Power BI Details Dashboard",
-  "Excel Summary Dashboard",
-  "Excel Overview Dashboard",
-  "Tableau Summary Dashboard",
-  "Tableau Overview Dashboard",
-  "Tableau Details Dashboard"
+  "Overview Dashboard - Key KPIs and Ratings",
+  "City Insights Page",
+  "Time Based Trends Page",
+  "Passenger Behaviour Analysis Page"
 ];
     
   
