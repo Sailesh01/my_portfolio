@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Sailesh Rana</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/data_icon.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/profile.jpg" alt="Sailesh Rana" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sailesh Rana">Sailesh Rana</h1>
+
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sailesh.rana@outlook.com" class="contact-link">sailesh.rana@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="http://www.linkedin.com/in/sailesh-rana" class="contact-link">http://www.linkedin.com/in/sailesh-rana</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/Sailesh01" class="contact-link">https://github.com/Sailesh01</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sydney, Australia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+
+<article class="about active" data-page="about" class="service-item-text">
+  <a href="../index.html#portfolio" class="close-btn" title="Back to Projects"
+    style="position: absolute; top: 20px; left: 830px; font-size: 1.5rem; text-decoration: none; color: #333; background: var(--light-gray); padding: 5px 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+    ×
+  </a>
+
+  <header>
+    <h1>Property Data Engineering Sprint - Part 1</h1>
+    <p>End-to-end data engineering solution using SSIS, SQL Server, and dimensional modeling to support property value reporting across NSW.</p>
+  </header>
+
+  <div class="carousel-container" style="max-width: 700px; margin: 2rem auto; position: relative;">
+    <img class="carousel-image" src="../assets/images/MVP Competition 1/Load_Fact_Property.png"
+      style="max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto; border-radius: 10px;" />
+    <p class="carousel-caption" style="text-align: center; margin-top: 10px;">Fact_Property load with lookups for Dim_Location, Dim_School, and Dim_Category keys; includes error redirection logic</p>
+
+    <button class="carousel-btn left" onclick="changeSlide(-1)"
+      style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❮</button>
+    <button class="carousel-btn right" onclick="changeSlide(1)"
+      style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❯</button>
+  </div>
+
+  <section class="project-detail" style="padding: 2rem;">
+    <h2>Project Overview</h2>
+    <ul style="list-style-type: disc; padding-left: 40px;">
+      <li><strong>Objective:</strong> Build a robust BI-ready data warehouse from raw property and school datasets using SSIS pipelines and dimensional modeling best practices.</li>
+      <li><strong>Tools Used:</strong> SSIS, SQL Server, Star Schema, Dimensional Modeling, Lookup & Derived Columns, Conditional Splits</li>
+    </ul>
+
+    <br><br>
+
+    <h2>Problem Statement</h2>
+    <p style="padding-left: 40px;">
+      This project simulates a real-world scenario where a government analytics team aims to track median property values by suburb, city, and postcode across NSW. The team also wants to integrate public school information and classify suburbs by property value categories. The goal was to design a scalable data warehouse and develop ETL pipelines using SSIS that transform raw data into clean, dimensional models to support downstream reporting and dashboard development.
+    </p>
+
+
+    <br><br>
+
+<h2>Design Documentation</h2><br>
+<div style="padding-left: 40px;">
+  <h3>1. Data Sources</h3>
+  <ul>
+    <li>AUS_SubCityDistrictState_Data.xlsx</li>
+    <li>NSW_PropertyMedianValue.xlsx</li>
+    <li>NSW-Public-Schools-Master-Dataset.csv</li>
+  </ul><br>
+
+  <h3>2. ETL Process</h3>
+  <ul>
+    <li>SSIS used for data ingestion from raw files into staging tables.</li>
+    <li>Derived Columns used to generate category_id.</li>
+    <li>Lookups used to fetch foreign keys from dimensions.</li>
+    <li>Data flow validated using Conditional Splits and redirected outputs.</li>
+  </ul><br>
+
+  <h3>3. Dimensional Modeling</h3>
+  <ul>
+    <li>Star schema adopted for reporting efficiency.</li>
+    <li>Fact table: <code>Fact_Property</code></li>
+    <li>Dimension tables: <code>Dim_Location</code>, <code>Dim_School</code>, <code>Dim_Category</code></li>
+  </ul><br>
+
+  <h3>4. Business Rules</h3>
+  <ul>
+    <li><code>category_id</code> is derived based on median property value ranges.</li>
+    <li><code>school_id</code> is optional; unmatched records allowed with NULL for coverage.</li>
+  </ul><br>
+
+  <h3>5. Error Handling</h3>
+  <ul>
+    <li>Lookup failures are redirected to Multicast for post-load review.</li>
+    <li>Critical nulls filtered before Fact table insert to ensure data integrity.</li>
+  </ul><br>
+
+  <h3>6. SQL Scripts</h3>
+  <ul>
+    <li>SQL scripts provided for creating staging, dimension, and fact tables.</li>
+    <li><code>Dim_Category</code> populated via static insertion logic for property value bands.</li>
+  </ul>
+</div>
+
+
+    <br><br>
+
+
+
+
+    <h2>Key Deliverables</h2>
+    <ul style="padding-left: 40px;">
+      <li>SSIS package for staging raw data from Excel and CSV files</li>
+      <li>SSIS package for transforming and loading data into Star Schema</li>
+      <li>Fact and Dimension tables including: <code>Fact_Property</code>, <code>Dim_Location</code>, <code>Dim_School</code>, <code>Dim_Category</code></li>
+      <li>Derived column to classify property values into predefined categories</li>
+      <li>Lookup transformations to map foreign keys and handle data mismatches</li>
+      <li>Bus Matrix and Schema Diagram following Kimball modeling techniques</li>
+    </ul>
+
+    <br><br>
+
+    <h2>Links</h2>
+    <ul style="padding-left: 40px;">
+      <li><a href="https://github.com/Sailesh01/Property-Data-Engineering-Sprint-Part1" target="_blank">GitHub Repo</a></li>
+    </ul>
+
+    <br><br>
+
+    <p><a href="../index.html#portfolio" class="back-btn">Back to Portfolio</a></p>
+  </section>
+</article>
+
+      
+      
+
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const images = [
+      "../assets/images/MVP Competition 1/Load_Fact_Property.png",
+      "../assets/images/MVP Competition 1/Load_Dim_Location.png",
+      "../assets/images/MVP Competition 1/Load_Dim_School.png",
+      "../assets/images/MVP Competition 1/TrasnformAndLoad_Overview.png",
+      "../assets/images/MVP Competition 1/Excel_To_Aus_Location_Table.png",
+      "../assets/images/MVP Competition 1/Excel_To_Property_Median_Table.png",
+      "../assets/images/MVP Competition 1/Excel_To_School_Master_Table.png"
+      
+
+    ];
+    const captions = [
+  "Fact_Property load with lookups for Dim_Location, Dim_School, and Dim_Category keys; includes error redirection logic",
+  "Transformation and load process for Dim_Location with distinct city, suburb, postcode, and state values",
+  "SSIS package to transform and load school data into Dim_School with postcode and suburb keys",
+  "Master ETL package orchestrating full data transformation and dimensional loading for Part 1",
+  "Initial SSIS package to extract Australian location data into the staging table",
+  "Dataflow to ingest NSW property median values into the staging layer",
+  "Load pipeline for public school master dataset into staging schema"
+];
+    
+  
+    let currentIndex = 0;
+
+function changeSlide(direction) {
+  currentIndex = (currentIndex + direction + images.length) % images.length;
+  document.querySelector(".carousel-image").src = images[currentIndex];
+  document.querySelector(".carousel-caption").textContent = captions[currentIndex];
+}
+
+// Ensure the first image is displayed initially
+document.querySelector(".carousel-image").src = images[currentIndex];
+
+
+</script>
+
+</body>
+
+</html>
