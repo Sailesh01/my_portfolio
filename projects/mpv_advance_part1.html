@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Sailesh Rana</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/data_icon.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/profile.jpg" alt="Sailesh Rana" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sailesh Rana">Sailesh Rana</h1>
+
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sailesh.rana@outlook.com" class="contact-link">sailesh.rana@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="http://www.linkedin.com/in/sailesh-rana" class="contact-link">http://www.linkedin.com/in/sailesh-rana</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/Sailesh01" class="contact-link">https://github.com/Sailesh01</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sydney, Australia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+<article class="about active" data-page="about" class="service-item-text">
+  <a href="../index.html#portfolio" class="close-btn" title="Back to Projects"
+    style="position: absolute; top: 20px; left: 830px; font-size: 1.5rem; text-decoration: none; color: #333; background: var(--light-gray); padding: 5px 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+    ×
+  </a>
+
+  <header>
+    <h1>Property Advance Data Engineering Sprint - Part 1</h1>
+    <p>End-to-end data ingestion using SSIS to extract, clean, and load multi-source Excel data into a structured staging layer within the Data Warehouse.</p>
+  </header>
+
+  <div class="carousel-container" style="max-width: 700px; margin: 2rem auto; position: relative;">
+    <img class="carousel-image" src="../assets/images/MVP Competition 2/Part1_SSIS_Overview.png"
+      style="max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto; border-radius: 10px;" />
+    <p class="carousel-caption" style="text-align: center; margin-top: 10px;">Control Flow overview showing all six sequence containers</p>
+
+    <button class="carousel-btn left" onclick="changeSlide(-1)"
+      style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❮</button>
+    <button class="carousel-btn right" onclick="changeSlide(1)"
+      style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; cursor: pointer;">❯</button>
+  </div>
+
+  <section class="project-detail" style="padding: 2rem;">
+    <h2>Project Overview</h2>
+    <ul style="list-style-type: disc; padding-left: 40px;">
+      <li><strong>Objective:</strong> Extract, transform, and load raw Excel data from multiple folders into SQL Server staging tables using SSIS packages.</li>
+      <li><strong>Tools Used:</strong> SSIS (Visual Studio), SQL Server, Excel, Data Flow Task, Lookup, Derived Column, Conditional Split</li>
+    </ul>
+
+    <br><br>
+
+    <h2>Problem Statement</h2>
+    <p style="padding-left: 40px;">
+      Multiple Excel files representing property values, rentals, crimes, schools, and transport data from three different Australian states (NSW, VIC, SA) needed to be consolidated into a unified staging environment. Each dataset came with different structures, data quality issues, and missing values. The goal was to automate the data load using SSIS, ensure transformation consistency, and prepare data for downstream modeling.
+    </p>
+
+    <br><br>
+
+    <h2>What I Built</h2>
+    <ul style="padding-left: 40px;">
+      <li>Created 6 staging tables in SQL Server to capture normalized raw data.</li>
+      <li>Designed and implemented multiple SSIS packages and sequence containers — one for each domain (House, Rental, School, Crime, Transport, Suburb).</li>
+      <li>Used Data Flow Tasks to extract from Excel, apply transformation logic (e.g. trimming, casing, replacing nulls), and perform lookups to enrich missing fields (e.g. city via suburb).</li>
+      <li>Implemented derived columns to standardize casing and bucket values.</li>
+      <li>Validated successful loads through data viewer and staging table sampling.</li>
+    </ul>
+
+    <br><br>
+
+    <h2>Transformation Examples</h2>
+    <ul style="padding-left: 40px;">
+      <li>Trimmed whitespace from suburb and city names to ensure joins worked correctly.</li>
+      <li>Standardized casing for suburbs (e.g. from ALL CAPS to Proper Case) to match lookup keys.</li>
+      <li>Handled null values in house value and rental fields by removing invalid rows.</li>
+      <li>Enriched records using lookup from suburb dataset to populate missing city values.</li>
+    </ul>
+
+    <br><br>
+
+    <h2>ETL Workflow Summary</h2>
+    <ul style="padding-left: 40px;">
+      <li>Each state-specific dataset had its own Data Flow Task inside a Sequence Container.</li>
+      <li>Staged tables were populated separately for NSW, VIC, and SA using consistent transformations.</li>
+      <li>All data was appended to common staging tables like <code>stg_house_values</code>, <code>stg_rental_values</code>, etc., each with a <code>load_date</code> column.</li>
+    </ul>
+
+    <br><br>
+
+    <h2>Key Skills Demonstrated</h2>
+    <ul style="padding-left: 40px;">
+      <li>Building and organizing SSIS packages for repeatable ETL workflows.</li>
+      <li>Using Lookups to join and enrich data dynamically within SSIS.</li>
+      <li>Data quality assurance via cleansing, derived columns, and conditional splits.</li>
+      <li>Scalable and auditable staging layer for downstream star schema modeling (Part 2).</li>
+    </ul>
+
+    <br><br>
+
+    <h2>Links</h2>
+    <ul style="padding-left: 40px;">
+      <li><a href="https://github.com/Sailesh01/Property-Data-Engineering-Sprint-Part1" target="_blank">GitHub Repo</a></li>
+    </ul>
+
+    <br><br>
+
+    <p><a href="../index.html#portfolio" class="back-btn">Back to Portfolio</a></p>
+  </section>
+</article>
+
+
+
+      
+      
+
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const images = [
+      "../assets/images/MVP Advanced 1/Control Flow overview showing all six sequence containers.png",
+      "../assets/images/MVP Advanced 1/Sample data from staging tables.png",
+      "../assets/images/MVP Advanced 1/AUS suburb data flow into stg_suburbs.png",
+      "../assets/images/MVP Advanced 1/Loads crime data from AUS into stg_crimes.png",
+      "../assets/images/MVP Advanced 1/Loads house value data from NSW into stg_house_values.png",
+      "../assets/images/MVP Advanced 1/Loads school data from NSW into stg_schools.png",
+      "../assets/images/MVP Advanced 1/Loads rental value data from SA into stg_rental_values.png",
+      "../assets/images/MVP Advanced 1/Loads transport data from NSW into stg_transport.png",
+      "../assets/images/MVP Advanced 1/Loads transport data from VIC into stg_transport.png",
+      "../assets/images/MVP Advanced 1/Loads school data from VIC into stg_schools.png",
+      "../assets/images/MVP Advanced 1/Loads rental value data from VIC into stg_rental_values.png"
+      
+
+    ];
+    const captions = [
+      "Control Flow overview showing all six sequence containers",
+      "Sample data from staging tables",
+      "AUS suburb data flow into stg_suburbs",
+      "Loads crime data from AUS into stg_crimes",
+      "Loads house value data from NSW into stg_house_values",
+      "Loads school data from NSW into stg_schools",
+      "Loads rental value data from SA into stg_rental_values",
+      "Loads transport data from NSW into stg_transport",
+      "Loads transport data from VIC into stg_transport",
+      "Loads school data from VIC into stg_schools",
+      "Loads rental value data from VIC into stg_rental_values"
+];
+    
+  
+    let currentIndex = 0;
+
+function changeSlide(direction) {
+  currentIndex = (currentIndex + direction + images.length) % images.length;
+  document.querySelector(".carousel-image").src = images[currentIndex];
+  document.querySelector(".carousel-caption").textContent = captions[currentIndex];
+}
+
+// Ensure the first image is displayed initially
+document.querySelector(".carousel-image").src = images[currentIndex];
+
+
+</script>
+
+</body>
+
+</html>
